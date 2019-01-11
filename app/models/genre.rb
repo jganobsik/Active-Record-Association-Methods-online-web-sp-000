@@ -8,7 +8,7 @@ class Genre < ActiveRecord::Base
 
   def artist_count
     # return the number of artists associated with the genre
-    artist_item = Genre.artists 
+    artist_item = Genre.artist 
     artist_item.length
   end
 
