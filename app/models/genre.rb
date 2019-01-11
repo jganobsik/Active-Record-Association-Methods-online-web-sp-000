@@ -11,7 +11,7 @@ class Genre < ActiveRecord::Base
     artist_list = []
     song_list = self.songs  
     song_list.each  do |s|
-      s.artist
+      artist_list.include? s.artist s.artist
   end
 
   def all_artist_names
